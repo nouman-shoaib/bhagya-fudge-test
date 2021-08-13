@@ -1,0 +1,134 @@
+<div class="dashboard-container">
+    <div class="head-container">
+        <div class="welcome aligment-row">
+            <img class="avatar" src="../../assets/images/Ellipse 379@2x.png" alt="image" />
+            <span class="welcome-note aligment-row">Welcome, <b>Alex Martin</b>.Here’s your personalized financial
+                dashboard</span>
+        </div>
+        <div class="currency-profile-container aligment-row">
+            <div class="currency aligment-row">
+                <span>Currency</span> :GBP<mat-icon class="expandMore">arrow_drop_down</mat-icon>
+            </div>
+            <div class="profile aligment-row">
+                <span>My Account</span>
+                <mat-icon class="expandMore">arrow_drop_down</mat-icon>
+            </div>
+        </div>
+    </div>
+    <div class="title-container aligment-row">
+        <h1 class="title aligment-row">Dashboard Home</h1>
+        <hr class="line">
+    </div>
+    <div class="stats-financial-health-container">
+        <div class="stats-financial-alignment wd50">
+            <h3>Quick Stats</h3>
+            <div class="aligment-row">
+                <mat-card class="wd100">
+                    <mat-card-header>
+                        <h1>£563,350</h1>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            Your net worth as of today
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="wd50 mrgl20">
+                    <mat-card-header>
+                        <h1>£12,430</h1>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            Monthy Cashflow
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="wd50 mrgl20">
+                    <mat-card-header>
+                        <h1>£161,4300</h1>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            Overall Liabilities
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+        <div class="stats-financial-alignment wd50 ">
+            <h3 class="mrgl20">My Financial Health</h3>
+            <mat-card class="mrgl20">
+                <mat-slider thumbLabel [displayWith]="formatLabel" tickInterval="1000" step="1000" min="0" max="100000"
+                    aria-label="units"></mat-slider>
+                <mat-card-content class="label">
+                    <div style="color: red;">
+                        POOR
+                    </div>
+                    <div style="color: orange;">
+                        AVERAGE
+                    </div>
+                    <div style="color: green;">
+                        GOOD
+                    </div>
+                </mat-card-content>
+                <mat-card-footer>Your financial health status is GOOD. However there’s still room for improvement. See
+                    how you can improve</mat-card-footer>
+            </mat-card>
+        </div>
+    </div>
+    <div class="performance-goals aligment-row">
+        <div class="performance">
+            <h3>My Performance</h3>
+            <img class="wd100" src="../../assets/images/Group 1248.svg" alt="image" />
+        </div>
+        <div class="goals">
+            <h3>My Goals</h3>
+            <div class="aligment-row wd100 goal-card-container">
+                <mat-card>
+                    <mat-card-header>
+                        <h3>Retirement</h3>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div class="circle">65% On track</div>
+                        <mat-divider></mat-divider>
+                        <div class="aligment-row amount">
+                            <span>£563,350</span>
+                            <span>£563,350,00</span>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+                <mat-card>
+                    <mat-card-header>
+                        <h3>Vacation Home</h3>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div class="circle">78% On track</div>
+                        <mat-divider></mat-divider>
+                        <div class="aligment-row amount">
+                            <span>£563,350</span>
+                            <span>£563,350,00</span>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+                <mat-card>
+                    <mat-card-header>
+                        <h3>Travel</h3>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div class="circle">46% On track</div>
+                        <mat-divider></mat-divider>
+                        <div class="aligment-row amount" style="justify-content:space-between;">
+                            <span>£563,350</span>
+                            <span>£563,350,00</span>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+    <div class="news-comments-user-container aligment-row">
+        <app-news class="wd50"></app-news>
+        <app-comments class="wd20"></app-comments>
+        <app-users class="wd20"></app-users>
+    </div>
+</div>

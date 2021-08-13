@@ -1,0 +1,19 @@
+<mat-card class="comment-container">
+    <mat-card-header>
+        <h3>Top Comments</h3>
+    </mat-card-header>
+    <div class="comments-div">
+    <mat-card class="comment-card" *ngFor="let comments of commentsData">
+        <mat-card-header>
+            <div mat-card-avatar class="header-image"></div>
+            <mat-card-title>{{comments.name}}</mat-card-title>
+            <mat-card-subtitle>2 hours ago</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p class="comment-body">
+                {{comments.body}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>
+</mat-card>

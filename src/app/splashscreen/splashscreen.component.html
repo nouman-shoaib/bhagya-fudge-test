@@ -1,0 +1,18 @@
+<div class="splashscreen-container">
+    <div class="fudge-icon" *ngIf="!viewDashboardClicked">
+        <img class="avatar" src="../../assets/icons/Group 1.svg" alt="image" />
+    </div>
+    <div class="animation-div" [@viewDashboard]="dashboardState" (@viewDashboard.done)="endviewDashboard($event)">
+    </div>
+    <div *ngIf="!viewDashboardClicked" class="splash-note-div" [@changeState]="currentState" (@changeState.done)="endState()">
+        <h1>All your finances in one place.</h1>
+        <span>Find out how our team of highly qualified financial consultants can help you achieve your financial
+            goals.</span>
+        <button mat-button class="btn-view-dashboard" (click)="viewDashboard()">View Dashboard</button>
+    </div>
+    <div class="btn-arrow-div" *ngIf="!arrowClicked">
+        <button mat-button class="btn-arrow" (click)="changeState()">
+            <mat-icon>arrow_downward</mat-icon>
+        </button>
+    </div>
+</div>

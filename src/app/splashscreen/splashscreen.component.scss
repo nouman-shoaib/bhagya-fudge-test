@@ -1,0 +1,59 @@
+.splashscreen-container {
+    height: 100vh;
+    background-image: url('../../assets/images/Rectangle\ 1.svg'), url('../../assets/images/dan-asaki-0uLVXFz6obg-unsplash@2x.png');
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .fudge-icon {
+        margin-top: 18%;
+    }
+    .btn-arrow-div {
+        display: flex;
+        left: 806px;
+        width: 309px;
+        height: 65px;
+        opacity: 1;
+        color: #ffff;
+        .btn-arrow {
+            width: 100%;
+        }
+    }
+    .splash-note-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        visibility: hidden;
+        margin: 50px;
+        h1 {
+            color: #ffff;
+            font-size: 65px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+        span {
+            color: #B2B2B2;
+            font-size: 16px;
+            text-align: justify;
+            margin: 25px;
+        }
+        .btn-view-dashboard {
+            color: #B2B2B2;
+            font-weight: 600;
+            font-size: 16px;
+            width: 35%;
+            border-radius: 9px;
+            border: 1px solid;
+            margin: 20px;
+            height: 7vh;
+        }
+    }
+    .animation-div {
+        background-color: #ffff;
+        opacity: 1;
+        display: flex;
+    }
+  }

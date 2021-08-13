@@ -1,0 +1,48 @@
+<!-- <mat-toolbar class="mat-elevation-z8">
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+    </button>
+</mat-toolbar> -->
+
+<mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav="matSidenav" fxLayout="column" mode="side" opened="true" class="mat-elevation-z8">
+        <div class="fudge-icon">
+            <img mat-list-icon src="../../assets/icons/Group 1.svg" alt='fudge' />
+        </div>
+        <div>
+            <button mat-button class="menu-button">
+                <mat-icon>dashboard</mat-icon>
+                <span>Dashboard</span>
+                <mat-icon class="arrow">play_arrow</mat-icon>
+            </button>
+            <button mat-button class="menu-button">
+                <mat-icon>people_outline</mat-icon>
+                <span>Advisors</span>
+                <mat-icon class="arrow">play_arrow</mat-icon>
+            </button>
+            <button mat-button class="menu-button">
+                <mat-icon>insert_drive_file</mat-icon>
+                <span>My Documents</span>
+                <mat-icon class="arrow">play_arrow</mat-icon>
+            </button>
+            <button mat-button class="menu-button">
+                <mat-icon>rss_feed</mat-icon>
+                <span>News Feed</span>
+                <mat-icon class="arrow">play_arrow</mat-icon>
+            </button>
+            <button mat-button class="menu-button">
+                <mat-icon>phone</mat-icon>
+                <span>Support</span>
+                <mat-icon class="arrow">play_arrow</mat-icon>
+            </button>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+        <app-dashboard></app-dashboard>
+    </mat-sidenav-content>
+</mat-sidenav-container>

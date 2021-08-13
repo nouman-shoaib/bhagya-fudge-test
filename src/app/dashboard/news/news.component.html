@@ -1,0 +1,19 @@
+<mat-card class="news-container">
+    <mat-card-header>
+        <h3>Industry News</h3>
+    </mat-card-header>
+    <div class="news-div">
+        <mat-card class="news-card" *ngFor="let news of newsData">
+            <div class="date">{{today | date: 'mediumDate'}}</div>
+            <mat-card-header>
+                <mat-card-title>{{news.title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    {{news.body}}
+                </p>
+                <a style="color: #0044B1;">Read Full Article</a>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</mat-card>

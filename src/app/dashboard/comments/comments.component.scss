@@ -1,0 +1,36 @@
+.comment-container{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    flex-direction: column;
+    .comments-div {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    h3 {
+        font-size: 21px;
+        font-weight: 900 !important;
+    }
+    .comment-card {
+        box-sizing: content-box;
+        margin: 5px;
+        padding: 5px;
+            mat-card-header {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: stretch;
+                align-content: stretch;
+                margin-top: 5%;
+            }
+            .header-image {
+                background-image: url('../../../assets/images/Ellipse\ 379@2x.png');
+                background-size: cover;
+            }
+            .comment-body {
+                margin-left: 24%;
+                margin-right: 2%;
+                text-align: justify;
+            }
+        }
+}
